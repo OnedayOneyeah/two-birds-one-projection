@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Two Birds, One Projection</title>
+<meta name="description" content="Two Birds, One Projection: Harmonizing Safety and Utility in LVLMs via Inference-time Feature Projection" />
+
+<meta property="og:title" content="Two Birds, One Projection" />
+<meta property="og:description" content="An inference-time projection that removes a modality-induced bias direction to simultaneously improve safety and utility in LVLMs." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>" />
+<link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1 class="title">Two Birds, One Projection</h1>
+    <p class="subtitle">Harmonizing Safety and Utility in LVLMs via Inference-time Feature Projection</p>
+
+    <div class="authors">
+      <span class="author"><a href="#" target="_blank" rel="noopener">Yewon Han</a></span>,
+      <span class="author"><a href="#" target="_blank" rel="noopener">Yumin Seol</a></span>,
+      <span class="author"><a href="#" target="_blank" rel="noopener">EunGyung Kong</a></span>,
+      <span class="author"><a href="#" target="_blank" rel="noopener">Minsoo Jo</a></span>,
+      <span class="author"><a href="#" target="_blank" rel="noopener">Taesup Kim</a><sup>*</sup></span>
+    </div>
+
+    <div class="affiliation">
+      Seoul National University, LAAL Lab
+      <div class="corresponding"><sup>*</sup>Corresponding author</div>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="https://arxiv.org/abs/2603.14825" target="_blank" rel="noopener">
+        <span class="icon">📄</span> arXiv
+      </a>
+      <a class="btn" href="https://arxiv.org/pdf/2603.14825" target="_blank" rel="noopener">
+        <span class="icon">📥</span> PDF
+      </a>
+      <a class="btn btn-disabled" href="#" aria-disabled="true" title="Coming soon">
+        <span class="icon">💻</span> Code (coming soon)
+      </a>
+      <a class="btn" href="#bibtex">
+        <span class="icon">❞</span> BibTeX
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="teaser">
+    <div class="figure-placeholder">
+      <!-- TODO: replace with your teaser figure -->
+      <p>Teaser figure goes here</p>
+      <p class="hint">Save an image to <code>static/images/teaser.png</code> and swap this placeholder for an &lt;img&gt; tag.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Abstract</h2>
+    <p class="abstract">
+      Existing jailbreak defence frameworks for Large Vision-Language Models often suffer from a
+      safety&ndash;utility tradeoff, where strengthening safety inadvertently degrades performance on
+      general visual-grounded reasoning tasks. In this work, we investigate whether safety and
+      utility are inherently antagonistic objectives. We focus on a modality induced bias direction
+      consistently observed across datasets, which arises from suboptimal coupling between the Large
+      Language Model backbone and visual encoders. We further demonstrate that this direction
+      undermines performance on both tasks. Leveraging this insight, we propose
+      <strong>Two Birds, One Projection</strong>, an efficient inference-time jailbreak defence that
+      projects cross-modal features onto the null space of the identified bias direction to remove
+      the corresponding components. Requiring only a single forward pass, our method effectively
+      breaks the conventional tradeoff, simultaneously improving both safety and utility across
+      diverse benchmarks.
+    </p>
+  </section>
+
+  <section class="block">
+    <h2>Method</h2>
+    <div class="figure-placeholder">
+      <!-- TODO: replace with your method diagram -->
+      <p>Method diagram goes here</p>
+    </div>
+    <p class="hint">
+      <!-- TODO: add a few paragraphs walking through the modality-induced bias direction, how it's
+           identified, and how the inference-time null-space projection is computed and applied. -->
+      Add a short walkthrough of the approach here.
+    </p>
+  </section>
+
+  <section class="block">
+    <h2>Results</h2>
+    <div class="figure-placeholder">
+      <!-- TODO: replace with your results table/figure -->
+      <p>Results table or figure goes here</p>
+    </div>
+    <p class="hint">
+      <!-- TODO: summarize the key quantitative results across safety and utility benchmarks. -->
+      Summarize the key results here.
+    </p>
+  </section>
+
+  <section class="block" id="bibtex">
+    <h2>BibTeX</h2>
+    <pre class="bibtex"><code>@article{han2026twobirds,
+  title   = {Two Birds, One Projection: Harmonizing Safety and Utility in LVLMs via Inference-time Feature Projection},
+  author  = {Han, Yewon and Seol, Yumin and Kong, EunGyung and Jo, Minsoo and Kim, Taesup},
+  journal = {arXiv preprint arXiv:2603.14825},
+  year    = {2026}
+}</code></pre>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>
+      This page uses the design of academic project pages such as
+      <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
