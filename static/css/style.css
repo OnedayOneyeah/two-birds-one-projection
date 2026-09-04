@@ -167,6 +167,14 @@ main {
   margin-top: 0;
 }
 
+.teaser img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
 /* BibTeX */
 
 .bibtex {
